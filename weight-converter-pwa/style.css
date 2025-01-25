@@ -1,23 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background: #f0f0f0;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  input, button {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 1rem;
-  }
-  
-  #results {
-    list-style: none;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  /* Add the background image */
+  background: url('./bg_.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  min-height: 100vh; /* Ensure the background covers the viewport height */
+  margin: 0; /* Remove default body margin */
+  color: #333; /* Keep the text color readable */
+}
+
+h1 {
+  color: #fff; /* Change text to white if your image is dark */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+  color: #fff; /* Adjust text color for visibility */
+}
+
+.content-wrapper {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: #fff; /* White text for contrast */
+  max-width: 600px; /* Limit content width */
+  width: 100%;
+}
