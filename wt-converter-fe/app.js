@@ -1,6 +1,6 @@
 async function fetchPlanetData() {
   try {
-      let response = await fetch("http://172.22.62.41:5000/planets");
+      let response = await fetch("http://34.46.228.194:5000/planets");
       let planetData = await response.json();
       console.log("Fetched planet data:", planetData); // Debugging line
       return planetData;
