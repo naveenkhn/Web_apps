@@ -1,7 +1,7 @@
 async function fetchPlanetData() {
   try {
       // Live server URL
-      let response = await fetch("http://34.46.228.194:5000/planets");
+      let response = await fetch("https://api.naveenkhn.com/wt-converter-be/planets");
       let planetData = await response.json();
       console.log("Fetched planet data:", planetData); // Debugging line
       return planetData;
